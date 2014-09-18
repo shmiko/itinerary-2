@@ -1,3 +1,3 @@
-repo-one
+Itinerary
 ========
-Testing commit
+Repo meant for managing the project about itinerary
