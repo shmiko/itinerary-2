@@ -1,0 +1,58 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="218" measuredH="406" mockupW="158" mockupH="386">
+  <controls>
+    <control controlID="0" controlTypeID="__group__" x="60" y="20" w="158" h="386" measuredW="158" measuredH="386" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Vertical%20Accordion%20with%20Icons</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="158" h="386" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0">
+          <controlProperties/>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::RoundButton" x="4" y="5" w="151" h="35" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="0">
+          <controlProperties>
+            <align>left</align>
+            <borderColor>10470904</borderColor>
+            <color>10470904</color>
+            <icon>SquaredMinusIcon%7Cxsmall</icon>
+            <markup>false</markup>
+            <shape>rectangle</shape>
+            <text>%20%20Item%20One</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="4" y="273" w="151" h="35" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="0">
+          <controlProperties>
+            <align>left</align>
+            <borderColor>14540253</borderColor>
+            <color>14540253</color>
+            <icon>SquaredPlusIcon%7Cxsmall</icon>
+            <markup>false</markup>
+            <shape>rectangle</shape>
+            <text>%20%20Item%20Two</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::RoundButton" x="4" y="309" w="151" h="35" measuredW="32" measuredH="32" zOrder="3" locked="false" isInGroup="0">
+          <controlProperties>
+            <align>left</align>
+            <borderColor>14540253</borderColor>
+            <color>14540253</color>
+            <icon>SquaredPlusIcon%7Cxsmall</icon>
+            <markup>false</markup>
+            <shape>rectangle</shape>
+            <text>%20%20Item%20Three</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::RoundButton" x="4" y="345" w="151" h="35" measuredW="32" measuredH="32" zOrder="4" locked="false" isInGroup="0">
+          <controlProperties>
+            <align>left</align>
+            <borderColor>14540253</borderColor>
+            <color>14540253</color>
+            <icon>SquaredPlusIcon%7Cxsmall</icon>
+            <markup>false</markup>
+            <shape>rectangle</shape>
+            <text>%20%20Item%20Four</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</mockup>
