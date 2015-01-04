@@ -1,0 +1,50 @@
+<div>
+	<div class="container-fluid">
+		<div class="row row-offcanvas row-offcanvas-left">
+
+			<!-- include sidebar directive -->
+			<!-- col-xs-6 col-sm-2 -->
+			<side-bar></side-bar>
+
+			<!-- main area -->
+			<div class="col-xs-12 col-sm-10">
+				<div class="row">
+					<div class="col-sm-6">
+						<h2>Starting Point</h2>
+						<input type="text" class="form-control">
+					</div>
+
+					<!-- Use the following to utilize the other half of the section -->
+					<!-- <div class="col-sm-6">Placeholder for maps and other information</div> -->
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-6">
+						<input type="button" value="Add another place" class="btn btn-info" ng-click="addPlace()">
+						<input type="button" value="Remove the last place" class="btn btn-danger"
+							ng-click="removeLastPlace()">
+						<ol>
+							<li ng-repeat="place in places">
+								Place visited
+								<input type="text" class="form-control" ng-model="place.placeName">
+								Comments
+								<textarea class="form-control" rows="3" ng-model="place.comment"></textarea>
+								<br>
+							</li>
+						</ol>
+
+					</div>
+
+					<!-- Use the following to utilize the other half of the section -->
+					<!-- <div class="col-sm-6">Placeholder for maps and other information</div> -->
+				</div>
+
+			</div>
+			<!-- /.col-xs-12 main -->
+
+		</div>
+		<!--/.row-->
+	</div>
+	<!--/.container-->
+</div>
+<!--/.page-container-->

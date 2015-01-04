@@ -1,0 +1,78 @@
+<div>
+	<div class="container-fluid">
+		<div class="row row-offcanvas row-offcanvas-left">
+
+			<!-- include sidebar directive -->
+			<!-- col-xs-6 col-sm-2 -->
+			<side-bar></side-bar>
+
+			<!-- Use this form to submit all the data -->
+			<form ng-submit="onFormSubmit()">
+				<!-- main area -->
+				<div class="col-xs-12 col-sm-10">
+					<div class="row">
+						<div class="col-sm-6">
+							<h2>Hotel</h2>
+							<input type="text" class="form-control">
+						</div>
+
+						<!-- Use the following to utilize the other half of the section -->
+						<!-- <div class="col-sm-6">Placeholder for maps and other information</div> -->
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-sm-6">
+							<h4>Hotel address</h4>
+							<textarea class="form-control" rows="3" ng-model="place.comment"></textarea>
+							<br>
+						</div>
+						<!-- Use the following to utilize the other half of the section -->
+						<!-- <div class="col-sm-6">Placeholder for maps and other information</div> -->
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<h4>Check-in</h4>
+							<input type="date" name="checkinDate"></input>
+
+						</div>
+						<div class="col-sm-3">
+							<h4>Check-out</h4>
+							<input type="date" name="checkoutDate"></input>
+						</div>
+						<!-- Use the following to utilize the other half of the section -->
+						<!-- <div class="col-sm-6">Placeholder for maps and other information</div> -->
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-sm-6">
+							<h4>Room information</h4>
+							<table class="table table-striped">
+								<tr>
+									<th>Room Type</th>
+									<th>Person(s)</th>
+									<th>Total Cost</th>
+								</tr>
+								<!-- Following element would be repeated  using ng-repeat-->
+								<tr>
+									<td>Deluxe</td>
+									<td>3</td>
+									<td>2500</td>
+								</tr>
+							</table>
+						</div>
+						<!-- Use the following to utilize the other half of the section -->
+						<!-- <div class="col-sm-6">Placeholder for maps and other information</div> -->
+					</div>
+					<input type="submit" value="Save" class="btn btn-default">
+					</input>
+
+				</div>
+				<!-- /.col-xs-12 main -->
+			</form>
+
+		</div>
+		<!--/.row-->
+	</div>
+	<!--/.container-->
+</div>
+<!--/.page-container-->

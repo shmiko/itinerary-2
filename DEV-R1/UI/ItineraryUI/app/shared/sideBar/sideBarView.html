@@ -1,0 +1,27 @@
+<!-- sidebar -->
+<div class="col-xs-6 col-sm-2 sidebar-offcanvas" id="sidebar" role="navigation" ng-controller="SideBarController">
+	<ul class="nav">
+		<li class="active">
+			<input type="button" id="addBtn" value="Add another day" class="btn btn-info" ng-click="addDay()">
+		</li>
+
+		<li>
+			<input type="button" id="removeBtn" value="Remove the last day" class="btn btn-danger"
+				ng-click="removeLastDay()">
+			</input>
+		</li>
+
+		<accordion close-others="oneAtATime"> <accordion-group heading="{{day.title}}"
+			ng-repeat="day in days">
+		<div ng-repeat="content in day.contents"><a href="#/{{content | lowercase}}/">{{content}}</a></div>
+		</accordion-group> </accordion>
+	</ul>
+</div>
+
+<!-- TODO: Following needs to be removed -->
+<style>
+#addBtn, #removeBtn {
+	margin-bottom: 5px;
+	width: 100%;
+}
+</style> 

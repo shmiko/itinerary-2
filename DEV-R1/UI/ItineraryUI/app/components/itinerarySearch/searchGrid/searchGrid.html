@@ -1,0 +1,44 @@
+<div>
+
+	<div id="nav">
+		<input type="button" id="addDay" value="Add another day" class="btn btn-info" style="width: 100%"
+			ng-click="addDay()">
+		</input>
+		<input type="button" id="removeDay" value="Remove the last day" style="width: 100%"
+			ng-click="removeLastDay()" class="btn btn-danger">
+		</input>
+
+		<accordion close-others="oneAtATime">
+		 	<accordion-group heading="{{day.title}}"
+			ng-repeat="day in days">
+			<div ng-repeat="content in day.contents">{{content}}</div>
+		</accordion-group> </accordion>
+	</div>
+
+ <div id="section">
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras bibendum diam eu accumsan
+			tristique. In id dui elementum, suscipit orci at, pharetra sem. Vestibulum mollis sapien sem.
+			Nulla lacinia risus vel convallis auctor. Nunc vulputate odio sed turpis pretium, in sollicitudin
+			lorem ultrices. Ut quis orci non nisl fermentum imperdiet nec vitae mauris. Suspendisse ipsum
+			lectus, luctus id dui sit amet, scelerisque molestie lorem. Nam iaculis, metus ut porttitor
+			iaculis, eros mi tempor nunc, sed porta ipsum dolor ac velit. Phasellus mattis libero at leo
+			porttitor mollis at ut nisi. Morbi pharetra enim est, ut commodo est tincidunt ut.</p>
+		<p>Sed et libero id turpis blandit sagittis nec sed elit. Mauris auctor ligula tellus, a
+			tincidunt nibh dictum et. Morbi eu placerat neque. Quisque consectetur libero nisi, eget ornare
+			mi facilisis gravida. Proin tempor felis nec eros elementum, et lacinia nunc euismod. Fusce
+			congue eu diam ut feugiat. Praesent eu ipsum quis lorem tristique pellentesque. Donec eget lorem
+			blandit, pharetra nisi vitae, gravida libero. Proin in ex a massa rutrum ultrices vel dictum
+			tortor. Ut quis lacus maximus, ullamcorper enim ut, porttitor justo. Nam laoreet magna risus, ac
+			pharetra felis finibus eu. Quisque posuere odio libero, eu ornare diam eleifend vitae.</p>
+		<p>Sed et libero id turpis blandit sagittis nec sed elit. Mauris auctor ligula tellus, a
+			tincidunt nibh dictum et. Morbi eu placerat neque. Quisque consectetur libero nisi, eget ornare
+			mi facilisis gravida. Proin tempor felis nec eros elementum, et lacinia nunc euismod. Fusce
+			congue eu diam ut feugiat. Praesent eu ipsum quis lorem tristique pellentesque. Donec eget lorem
+			blandit, pharetra nisi vitae, gravida libero. Proin in ex a massa rutrum ultrices vel dictum
+			tortor. Ut quis lacus maximus, ullamcorper enim ut, porttitor justo. Nam laoreet magna risus, ac
+			pharetra felis finibus eu. Quisque posuere odio libero, eu ornare diam eleifend vitae.</p>
+
+	</div> 
+
+</div>

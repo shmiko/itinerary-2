@@ -1,32 +1,6 @@
 <style>
-
-#header {
-    background-color:black;
-    color:white;
-    text-align:center;
-    padding:5px; 
+#addBtn, #removeBtn {
+	margin-bottom: 5px;
+	width: 100%;
 }
-#nav {
-    line-height:30px;
-    background-color:#eeeeee;
-    height:600px;
-    width:200px;
-    float:left;
-    padding:5px; 
-}
-#section {
-    width:350px;
-    float:left;
-    padding:10px; 
-}
- #footer {
-    background-color:black;
-    color:white;
-    clear:both;
-    text-align:center;
-    padding:5px; 
-}
-#addDay,#removeDay{
-	width:190px
-}
-</style>
+</style> 
