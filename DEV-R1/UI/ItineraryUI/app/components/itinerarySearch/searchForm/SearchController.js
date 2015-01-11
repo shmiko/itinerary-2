@@ -3,14 +3,11 @@
 
     var SearchController = function ($scope, $location, searchService) {
 
-        $scope.searchFormData = {
-            journeyStart: searchService.getSearchFormData().journeyStart,
-            journeyEnd: searchService.getSearchFormData().journeyEnd,
-            destinations: searchService.getSearchFormData().destinations
-        };
+        //Initialize form data for this scope once the form
+        $scope.searchFormData = searchService.getSearchFormData();
 
-        $scope.search = function (searchFormData) {
-            searchService.setSearchFormData(searchFormData);
+        $scope.search = function () {
+            searchService.setSearchFormData($scope.searchFormData);
             $location.path("/searchGrid/");
         };
 

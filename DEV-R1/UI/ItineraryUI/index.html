@@ -3,70 +3,69 @@
 
 <head>
 
-<!-- Following meta needed for fluidic design in Bootstrap CSS -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Following meta needed for fluidic design in Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Core Angular libs -->
-<script src="assets/libs/angular.js"></script>
-<script src="assets/libs/angular-route.js"></script>
+    <!-- Core Angular libs -->
+    <script src="assets/libs/angular.js"></script>
+    <script src="assets/libs/angular-route.js"></script>
 
-<!-- Angular bootstrap UI, includes an optional theme as well-->
-<script src="assets/libs/ui-bootstrap-tpls-0.12.0.js"></script>
-<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet"
-	href="assets/css/bootstrap-theme.min.css">
+    <!-- Angular bootstrap UI, includes an optional theme as well-->
+    <script src="assets/libs/ui-bootstrap-tpls-0.12.0.js"></script>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="assets/css/bootstrap-theme.min.css">
 
-<!-- Project specific JS files -->
-<script src="app/app.js"></script>
-<script src="app/components/itinerarySearch/searchForm/SearchController.js"></script>
-<script src="app/components/itinerarySearch/searchGrid/SearchGridController.js"></script>
-<script src="app/components/itineraryDetail/travel/TravelController.js"></script>
-<script src="app/components/itineraryDetail/sightseeing/SightseeingController.js"></script>
-<script src="app/components/itineraryDetail/hotel/HotelController.js"></script>
-	<script src="app/shared/services/searchService.js"></script>
-<script src="app/shared/sideBar/SideBarController.js"></script>
-<script src="app/shared/sideBar/SideBarDirective.js"></script>
+    <!-- Project specific JS files -->
+    <script src="app/app.js"></script>
+    <script src="app/components/itinerarySearch/searchForm/SearchController.js"></script>
+    <script src="app/components/itinerarySearch/searchGrid/SearchGridController.js"></script>
+    <script src="app/components/itineraryDetail/travel/TravelController.js"></script>
+    <script src="app/components/itineraryDetail/sightseeing/SightseeingController.js"></script>
+    <script src="app/components/itineraryDetail/hotel/HotelController.js"></script>
+    <script src="app/shared/services/searchService.js"></script>
+    <script src="app/shared/sideBar/SideBarController.js"></script>
+    <script src="app/shared/sideBar/SideBarDirective.js"></script>
 
-<!-- Project specific CSS-->
-<link rel="stylesheet" href="assets/css/masterLayout.css">
+    <!-- Project specific CSS-->
+    <link rel="stylesheet" href="assets/css/masterLayout.css">
 
 </head>
 
 <body>
-	<div>
+<div>
 
-		<!-- Nav bar -->
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" ng-click="isCollapsed=!isCollapsed">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Itinerary</a>
-				</div>
-				<div class="navbar-collapse" collapse="isCollapsed">
-					<ul class="nav navbar-nav">
-						<li><a href="#/search/">Search</a></li>
-						<li><a href="#/searchGrid/">Search Grid</a></li>
-						<li><a href="#/itineraryDetail/">Itinerary Detail</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" ng-click="isCollapsed=!isCollapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/search/">Itinerary</a>
+            </div>
+            <div class="navbar-collapse" collapse="isCollapsed">
+                <ul class="nav navbar-nav">
+                    <li><a href="#/search/">Search</a></li>
+                    <li><a href="#/searchGrid/">Search Grid</a></li>
+                    <li><a href="#/itineraryDetail/">Itinerary Detail</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-		<!-- Main view for the app -->
-		<div ng-view></div>
+    <!-- Main view for the app -->
+    <div ng-view></div>
 
 
-	</div>
+</div>
 
 
 </body>
-
 
 
 </html>
