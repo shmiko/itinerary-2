@@ -21,18 +21,17 @@ select {
 <div>
 	<center>
 		<h2>Search</h2>
-		<form name="searchItinerary" ng-submit="search(source,dest,destList)">
+
+		<form name="searchItinerary" ng-submit="search(searchFormData)">
 			<table>
 				<tr>
 					<td>Journey starting from</td>
-					<td><input type="text" name="source" ng-model="source"></input></td>
+					<td><input type="text" name="journeyStart" ng-model="searchFormData.journeyStart"></input></td>
 				</tr>
 				<tr>
 					<td>List of Destinations to visit:</td>
-					<td><select multiple ng-model="destList">
-							<option value="Shimla">Shimla</option>
-							<option value="Kullu">Kullu</option>
-							<option value="Manali">Manali</option>
+					<td><select multiple ng-model="searchFormData.destinations">
+						<option ng-repeat="dest in searchFormData.destinations">{{dest.desc}}</option>
 					</select></td>
 				</tr>
 				<tr>
@@ -42,15 +41,15 @@ select {
 				</tr>
 				<tr>
 					<td>Journey ends at</td>
-					<td><input type="text" name="dest" ng-model="dest"></input></td>
+					<td><input type="text" name="journeyEnd" ng-model="searchFormData.journeyEnd"></input></td>
 				</tr>
 				<tr>
 					<td>Start Date</td>
-					<td><input type="date" name="startDate" ng-model="startDate"></input></td>
+					<td><input type="date" name="startDate" ng-model="searchFormData.startDate"></input></td>
 				</tr>
 				<tr>
 					<td>End Date</td>
-					<td><input type="date" name="endDate" ng-model="endDate"></input></td>
+					<td><input type="date" name="endDate" ng-model="searchFormData.endDate"></input></td>
 				</tr>
 				<tr>
 					<td></td>

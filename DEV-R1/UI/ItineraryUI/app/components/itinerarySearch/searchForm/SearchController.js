@@ -1,17 +1,20 @@
-(function() {
-	var app = angular.module("itinerary");
+(function () {
+    var app = angular.module("itinerary");
 
-	var SearchController = function($scope, $location) {
+    var SearchController = function ($scope, $location, searchService) {
 
-		$scope.search = function(source, dest, destList) {
-			$scope.source = "a";
-			$scope.dest = "b";
-			$scope.destList = "Shimla";
+        $scope.searchFormData = {
+            journeyStart: searchService.getSearchFormData().journeyStart,
+            journeyEnd: searchService.getSearchFormData().journeyEnd,
+            destinations: searchService.getSearchFormData().destinations
+        };
 
-			$location.path("/searchGrid/");
-		};
+        $scope.search = function (searchFormData) {
+            searchService.setSearchFormData(searchFormData);
+            $location.path("/searchGrid/");
+        };
 
-	};
+    };
 
-	app.controller("SearchController", SearchController);
+    app.controller("SearchController", SearchController);
 }());
