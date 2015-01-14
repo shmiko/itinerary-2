@@ -20,43 +20,47 @@
 
 <div>
     <center>
-        <h2>Search</h2>
+        <h2>Itinerary Search</h2>
 
-        <form name="searchItinerary" ng-submit="search()">
+        <form name="searchItinerary" ng-submit="searchItineraries()">
             <table>
                 <tr>
                     <td>Journey starting from</td>
-                    <td><input type="text" name="journeyStart" ng-model="searchFormData.journeyStart"></input></td>
+                    <td><input type="text" ng-model="searchFormData.journeyStart"></td>
                 </tr>
                 <tr>
                     <td>List of Destinations to visit:</td>
                     <td>
                         <select multiple ng-options="dest as dest.desc for dest in searchFormData.destinations"
-                                ng-model="searchFormData.selDestinations">
+                                ng-model="searchFormData.selectedDestinations">
                         </select></td>
                 </tr>
                 <tr>
+                    <td>Add another destination</td>
+                    <td><input type="text" ng-model="searchFormData.addedDestination"></td>
+                </tr>
+                <tr>
                     <td></td>
-                    <td><input type="button" value="Add new"
+                    <td><input type="button" value="Add" ng-click="addDestination()"
                                class="btn btn-info"/></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="button" value="Remove Selected"
+                    <td><input type="button" value="Remove Selected" ng-click="removeDestinations()"
                                class="btn btn-danger"/></td>
                 </tr>
                 <tr>
                     <td>Journey ends at</td>
-                    <td><input type="text" name="journeyEnd" ng-model="searchFormData.journeyEnd"></input></td>
+                    <td><input type="text" ng-model="searchFormData.journeyEnd"></td>
                 </tr>
                 <tr>
                     <td>Start Date</td>
-                    <td><input type="date" name="startDate" id="dateField" ng-model="searchFormData.startDate"></input>
+                    <td><input type="date" id="dateField" ng-model="searchFormData.startDate"></input>
                     </td>
                 </tr>
                 <tr>
                     <td>End Date</td>
-                    <td><input type="date" name="endDate" ng-model="searchFormData.endDate"></input></td>
+                    <td><input type="date" ng-model="searchFormData.endDate"></td>
                 </tr>
                 <tr>
                     <td></td>

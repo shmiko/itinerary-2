@@ -22,9 +22,22 @@
             console.log(searchFormData);
         };
 
+        var addDestination = function (destination) {
+            searchFormData.destinations.push(destination);
+        };
+
+        var removeDestinations = function (selectedDestinations) {
+            angular.forEach(selectedDestinations, function (destination) {
+                var indexOfItemToRemove = searchFormData.destinations.indexOf(destination);
+                searchFormData.destinations.splice(indexOfItemToRemove, 1);
+            });
+        };
+
         return {
             getSearchFormData: getSearchFormData,
-            setSearchFormData: setSearchFormData
+            setSearchFormData: setSearchFormData,
+            addDestination: addDestination,
+            removeDestinations: removeDestinations
         };
 
     };
