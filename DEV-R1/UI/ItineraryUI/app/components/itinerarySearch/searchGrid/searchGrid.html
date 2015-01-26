@@ -2,24 +2,50 @@
 	<div class="container-fluid">
 		<div class="row row-offcanvas row-offcanvas-left">
 
-			<!-- include sidebar directive -->
-			<!-- col-xs-6 col-sm-2 -->
-			<side-bar></side-bar>
 
 			<!-- main area -->
-			<div class="col-xs-12 col-sm-10">
-				<div class="row">
-					<div class="col-sm-6">
-						<h2>Starting Point</h2>
-						<input type="text" class="form-control">
+			<div class="col-xs-12 col-sm-12">
+					<center><h3>Placeholder for the search filters applicable</h3></center>
+				<div class="row" ng-repeat="itinerary in itineraries">
+					<div class="col-xs-2 col-sm-2">
+						<img ng-src="{{itinerary.imgSrc}}" width="100%" height="100%"/>
+						<br><br>
 					</div>
-					<!-- Use the following to utilize the other half of the section -->
-					<!-- <div class="col-sm-6">Placeholder for maps and other information</div> -->
+
+					<div class="col-xs-10 col-sm-10">
+						<div class="col-xs-10 col-sm-12">
+							<h4>{{itinerary.title}}</h4>
+						</div>
+						<div class="col-xs-10 col-sm-6">
+							Destinations:
+							<h7 ng-repeat="destination in itinerary.destinations">
+								{{destination}},
+							</h7>
+						</div>
+						<div class="col-xs-10 col-sm-6">
+							Modes of transport:
+							<h7 ng-repeat="transport in itinerary.modesOfTransport">
+								{{transport}},
+							</h7>
+						</div>
+						<div class="col-xs-10 col-sm-6">
+							Start Date: {{itinerary.startDate}}
+						</div>
+						<div class="col-xs-10 col-sm-6">
+							End Date: {{itinerary.endDate}}
+						</div>
+						<div class="col-xs-10 col-sm-6">
+							Cost:{{itinerary.cost}}
+						</div>
+
+					</div>
 				</div>
-				<br>
+
+
 
 			</div>
 			<!-- /.col-xs-12 main -->
+
 
 		</div>
 		<!--/.row-->
